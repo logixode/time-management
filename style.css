@@ -5,10 +5,6 @@ body {
     overflow-x: hidden;
 }
 
-a:visited {
-    text-decoration: none; 
-}
-
 nav {
     /* width: 100%; */
     display: flex;
@@ -34,8 +30,9 @@ nav a {
 
 nav .nav-item:hover {
     animation: line 0.3s;
-    margin-bottom: -3px;
-    border-bottom: 3px solid #00D1B4;
+    margin-bottom: -9px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #00D1B4;
 }
 
 .nav-brand {
@@ -65,8 +62,19 @@ nav .nav-item:hover {
     margin: 0 20px;
 }
 
-.content {
+.branding {
     display: flex;
+}
+
+.brand-path {
+    /* -webkit-clip-path: polygon(50% 95%, 100% 75%, 100% 100%, 0 100%, 0 75%); */
+    clip-path: polygon(50% 95%, 100% 75%, 100% 100%, 0 100%, 0 75%);
+    background: #00D1B4;
+    height: 600px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 .left {
@@ -109,7 +117,7 @@ nav .nav-item:hover {
     width: 205px;
     height: 6px;
     position: absolute;
-    top: 455px;
+    top: 470px;
     left: 240px;
     background: #00D1B4;
 }
@@ -132,6 +140,7 @@ button {
     background: #00D1B4;
     box-shadow: 0px 5px 64px rgba(68, 216, 171, 0.3);
     border-radius: 3px;
+    animation: button-show 1s ;
 }
 
 button:hover {
@@ -152,11 +161,20 @@ button:hover {
     }
 }
 
+@keyframes button-show {
+    0% {
+        background: #fff
+    }
+    100% {
+        background: #00D1B4;
+    }
+}
+
 @keyframes line {
     0% {
         border-bottom: 0px solid #00D1B4;
     }
     100% {
-        border-bottom: 3px solid #00D1B4;
+        border-bottom: 4px solid #00D1B4;
     }
 }
