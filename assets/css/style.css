@@ -8,7 +8,7 @@ body {
 nav {
     /* width: 100%; */
     display: flex;
-    padding: 10px;
+    padding: 3px;
     box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -29,7 +29,7 @@ nav a {
     font-weight: bold;
 }
 
-nav .nav-item:hover {
+nav .nav-item .item:hover {
     animation: line 0.3s;
     margin-bottom: -9px;
     padding-bottom: 5px;
@@ -44,14 +44,16 @@ nav .nav-item:hover {
 
 .logo {
     vertical-align: middle;
-    width: 10%;
+    width: 75px;
 }
 
 .navbar {
-    right: 0;
+    /* width: 1400px; */
+    margin-left: auto;
 }
 
 .nav-menu {
+    align-items: center;
     display: flex;
     list-style: none;
 }
@@ -61,7 +63,7 @@ nav .nav-item:hover {
     margin: 0 20px;
 }
 
-.branding {
+.flex {
     display: flex;
 }
 
@@ -77,12 +79,14 @@ nav .nav-item:hover {
 }
 
 .left {
+    z-index: -1;
     margin-top: 180px;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
 }
 
 .right {
+    z-index: -1;
     margin-top: 80px;
     transform: scaleX(-1);
     flex: 0 0 41.666667%;
@@ -90,7 +94,7 @@ nav .nav-item:hover {
 }
 
 .right img {
-    width: 670px;
+    width: 500px;
     /* z-index: -9; */
 }
 
@@ -127,22 +131,45 @@ nav .nav-item:hover {
     color: #757575;
 }
 
-button {
+.btn {
+    border: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: white;
     font-size: 18px;
     line-height: 25px;
     padding: 13px;
     border-radius: 20px;
-    border: none;
-    outline: none;
     width: 230px;
-    color: white;
     background: #00D1B4;
     box-shadow: 0px 5px 64px rgba(68, 216, 171, 0.3);
     border-radius: 3px;
     animation: button-show 1s ;
 }
 
-button:hover {
+.btn-outline-primary {
+    color: #00D1B4;
+    border: #00D1B4 solid 2px !important;
+    border-radius: 4px;
+    background: transparent;
+    padding: 13px;
+
+}
+
+.nav-item .btn-primary:hover {
+    padding: 2px !important;
+}
+
+.nav-item .btn {
+    text-align: center;
+    width: 100px;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.btn-primary:hover {
     color: #00D1B4;
     background: transparent;
     padding: 11px;
@@ -153,6 +180,10 @@ button:hover {
 
 .btn-menu {
     display: none;
+}
+
+.mr-1 {
+   margin-right: 10px; 
 }
 
 @keyframes in-hover {
@@ -184,11 +215,11 @@ button:hover {
 
 @keyframes menu-mobile {
     0% {
-        margin-top: -60px;
+        margin-top: -80px;
         transform: scaleY(0)
     }
     100% {
-        transform: scaleY(1)
+        transform: scaleY(1);
         margin-top: 0px;
     }
 }
@@ -203,7 +234,7 @@ button:hover {
         padding: 20px !important;
     }
 
-    button {
+    .btn {
         position: relative;
         z-index: 1;
     }
@@ -213,6 +244,7 @@ button:hover {
         display: block !important;
         position: absolute;
         top: 63px;
+        width: 100%;
         left: 0;
         background: #fff;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -330,7 +362,7 @@ button:hover {
     }
 
     .left {
-        margin-top: 100px;
+        margin-top: 80px;
     }
     
     .left p {
@@ -339,12 +371,12 @@ button:hover {
 
     .right {
         text-align: right;
-        margin-top: -20px;
-        transform: scale(0.7) scaleX(-1);
+        margin-top: 20px;
+        /* transform: scale(0.7) scaleX(-1); */
     }
 
     .nav-brand {
-        /* margin-top: 5px; */
+        margin-top: 5px;
     }
 
     .huge {
@@ -357,7 +389,7 @@ button:hover {
     }
 
     .huge:after {
-        top: 367px;
+        top: 340px;
         left: 125px;
     }
 }

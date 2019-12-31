@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     
     <title>Time Management</title>
 </head>
 <body style="overflow: hidden;">
     <nav class="container">
         <a href="#" class="nav-brand active">
-            <img src="./img/logo.png" class="logo">Time Management
+            <img src="./assets/img/logo.png" class="logo">Time Management
         </a>
 
-        <button class="btn-menu" onclick="showMenu()">
+        <button class="btn btn-menu" onclick="showMenu()">
             <svg width="24" height="24" class="menu-btn" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                 <path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/>
             </svg>
@@ -25,32 +25,36 @@
         <div class="navbar" id="menu">
             <ul class="nav-menu">
                 <li class="nav-item active">
-                    <a href="#">home</a>
+                    <a href="#" class="item">home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Todo List</a>
+                    <a href="#" class="item">Todo List</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">about</a>
+                    <a href="#" class="item">about</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">contacts</a>
+                    <a href="#" class="item">contacts</a>
+                </li>
+                <li class="nav-item flex">
+                    <a class="btn btn-primary mr-1">login</a>
+                    <a class="btn btn-outline-primary">Signup</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <div class="branding">
+        <div class="flex">
             <div class="left">
                 <h1 class="huge">Manage Your Time<br>Efficiently</h1>
                 <p>Your future is created by what you do today,<br>not tomorrow</p>
                 <div class="centered">
-                    <button>Get Started</button>
+                    <button class="btn btn-primary">Get Started</button>
                 </div>
             </div>
             <div class="right">
-                <img src="./img/dashboard.jpg" alt="Dashboard">
+                <img src="./assets/img/dashboard.jpg" alt="Dashboard">
             </div>
         </div>
         <div class="brand-path"></div>
