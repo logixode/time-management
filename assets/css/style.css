@@ -5,11 +5,25 @@ body {
     /* overflow-x: hidden; */
 }
 
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #00D1B4;
+}
+
 nav {
     /* width: 100%; */
     display: flex;
     padding: 3px;
     box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
 
 .container {
@@ -63,12 +77,115 @@ nav .nav-item .item:hover {
     margin: 0 20px;
 }
 
+.text-white {
+    color: #fff;
+}
+
+.text-primary {
+    color: #00D1B4;
+}
+
+.card {
+    /* padding: 10px; */
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card .btn {
+    padding: 6px !important;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.col-4 {
+    width: 33.3%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.mx {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.mx-2 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.my-3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.my-5 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#bg1 {
+    background: #00D1B4;
+    top: 0;
+    width: 2500px;
+    height: 1000px;
+    z-index: -8;
+    position: fixed;
+    transform: rotate(170deg) translate(0, 650px);
+}
+#bg2 {
+    background: #00b39be1;
+    top: 25px;
+    width: 2500px;
+    height: 1000px;
+    z-index: -9;
+    position: fixed;
+    transform: rotate(170deg) translate(0, 650px);
+}
+
+.bg-gray {
+    padding: 8px 0;
+    background: #e6e6e6;
+}
+
+.img-rounded {
+    border-radius: 50%;
+    width: 150px;
+    margin-top: -50px;
+}
+
+.my-3 .mx {
+    margin-top: 60px;
+}
+
 .flex {
     display: flex;
 }
 
 .brand-path {
-    /* -webkit-clip-path: polygon(50% 95%, 100% 75%, 100% 100%, 0 100%, 0 75%); */
     clip-path: polygon(50% 95%, 100% 75%, 100% 100%, 0 100%, 0 75%);
     background: #00D1B4;
     height: 600px;
@@ -156,6 +273,17 @@ nav .nav-item .item:hover {
     background: transparent;
     padding: 13px;
 
+}
+.btn-outline-primary:hover {
+    color: white;
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 20px;
+    width: 230px;
+    background: #00D1B4;
+    box-shadow: 0px 5px 64px rgba(68, 216, 171, 0.3);
+    border-radius: 3px;
+    animation: button-show 1s ;
 }
 
 .nav-item .btn-primary:hover {
@@ -362,7 +490,7 @@ nav .nav-item .item:hover {
     }
 
     .left {
-        margin-top: 80px;
+        margin-top: 120px;
     }
     
     .left p {
