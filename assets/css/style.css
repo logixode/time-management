@@ -26,6 +26,74 @@ nav {
     background: #fff;
 }
 
+form {
+    padding-right: 16px;
+}
+
+[type="text"], [type="password"] {
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #aaa;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #00D1B4;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #00D1B4;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.radio-bold {
+    font-size: 17px;
+}
+label {
+    font-size: 13px;
+}
 .container {
     padding-left: 240px;
     padding-right: 240px;
@@ -85,6 +153,10 @@ nav .nav-item .item:hover {
     color: #00D1B4;
 }
 
+.text-gray {
+    color: #b6b6b6;
+}
+
 .card {
     /* padding: 10px; */
     background: #fff;
@@ -115,12 +187,36 @@ nav .nav-item .item:hover {
     width: 50%;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .text-center {
     text-align: center;
 }
 
+.p-1 {
+    padding: 10px;
+}
+
 .p-2 {
     padding: 20px;
+}
+
+.p-3 {
+    padding: 30px;
+}
+
+.p-4 {
+    padding: 40px;
+}
+
+.p-5 {
+    padding: 50px;
+}
+
+.m-auto {
+    margin: auto;
 }
 
 .mx-auto {
@@ -137,14 +233,84 @@ nav .nav-item .item:hover {
     margin-left: 20px;
 }
 
+.my-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .my-3 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+.mt-1 {
+    margin-top: 10px; 
+}
+
+.mt-2 {
+    margin-top: 20px; 
+}
+
+.mt-3 {
+    margin-top: 30px; 
+}
+
+.mt-4 {
+    margin-top: 40px; 
+}
+
+.mt-5 {
+    margin-top: 50px; 
+}
+
 .my-5 {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.mr-1 {
+    margin-right: 10px; 
+}
+
+.mr-2 {
+    margin-right: 20px; 
+}
+
+.mr-3 {
+    margin-right: 30px; 
+}
+
+.mr-4 {
+    margin-right: 40px; 
+}
+
+.mr-5 {
+    margin-right: 50px; 
+}
+
+.mb-1 {
+    margin-bottom: 10px; 
+}
+
+.mb-2 {
+    margin-bottom: 20px; 
+}
+
+.mb-3 {
+    margin-bottom: 30px; 
+}
+
+.mb-4 {
+    margin-bottom: 40px; 
+}
+
+.mb-5 {
+    margin-bottom: 50px; 
 }
 
 #bg1 {
@@ -166,6 +332,18 @@ nav .nav-item .item:hover {
     transform: rotate(170deg) translate(0, 650px);
 }
 
+#col-divider::after {
+    border-radius: 100px;
+    content: '';
+    width: 3px;
+    height: 250px;
+    position: absolute;
+    top: 270px;
+    z-index: 9;
+    left: 680px;
+    background: #e6e6e6; 
+}
+
 .bg-gray {
     padding: 8px 0;
     background: #e6e6e6;
@@ -183,6 +361,17 @@ nav .nav-item .item:hover {
 
 .flex {
     display: flex;
+}
+.flex .bg-gray {
+    display: flex;
+    padding: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.sign {
+    width: 50px;
+    margin-right: 10px;
 }
 
 .brand-path {
@@ -268,12 +457,60 @@ nav .nav-item .item:hover {
 
 .btn-outline-primary {
     color: #00D1B4;
+    font-size: 18px;
     border: #00D1B4 solid 2px !important;
     border-radius: 4px;
     background: transparent;
     padding: 13px;
 
 }
+
+.btn-facebook {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 13px;
+    border-radius: 20px;
+    width: 230px;
+    background: #3578E5;
+    border-radius: 3px;
+}
+
+
+.btn-facebook:hover {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 13px;
+    border-radius: 20px;
+    width: 230px;
+    background: #3578e5d0;
+    border-radius: 3px;
+}
+
+.btn-google {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 13px;
+    border-radius: 20px;
+    width: 230px;
+    background: #e55835;
+    border-radius: 3px;
+}
+
+
+.btn-google:hover {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 13px;
+    border-radius: 20px;
+    width: 230px;
+    background: #e55835d8;
+    border-radius: 3px;
+}
+
 .btn-outline-primary:hover {
     color: white;
     font-size: 18px;
@@ -284,6 +521,9 @@ nav .nav-item .item:hover {
     box-shadow: 0px 5px 64px rgba(68, 216, 171, 0.3);
     border-radius: 3px;
     animation: button-show 1s ;
+}
+.btn-thin {
+    padding: 8px !important;
 }
 
 .nav-item .btn-primary:hover {
@@ -310,9 +550,6 @@ nav .nav-item .item:hover {
     display: none;
 }
 
-.mr-1 {
-   margin-right: 10px; 
-}
 
 @keyframes in-hover {
     0% {
