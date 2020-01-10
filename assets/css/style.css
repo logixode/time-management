@@ -256,8 +256,8 @@ nav .nav-item .item:hover {
 }
 
 .my-3 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
 }
 
 .mt-1 {
@@ -361,15 +361,13 @@ nav .nav-item .item:hover {
 }
 
 .login #col-divider::after {
-    border-radius: 100px;
-    content: '';
-    width: 3px;
     height: 200px;
-    position: absolute;
     top: 275px;
-    z-index: 9;
-    left: 680px;
-    background: #e6e6e6; 
+}
+
+.register #col-divider::after {
+    height: 300px;
+    top: 255px;
 }
 
 .bg-gray {
