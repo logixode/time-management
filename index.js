@@ -7,5 +7,10 @@ function addSchedule() {
     document.body.classList.toggle('oflow-hidden')
 }
 
+function closeDialog() {
+    document.getElementById('dialog').classList.remove('show-dialog')
+    document.body.classList.remove('oflow-hidden')
+}
+
 const date = new Date();
 document.getElementById("date").innerHTML = date;
