@@ -30,6 +30,10 @@ form {
     padding-right: 16px;
 }
 
+.oflow-hidden {
+    overflow: hidden;
+}
+
 [type="text"], [type="email"], [type="password"] {
     padding: 8px 0 8px 0;
     outline: none;
@@ -94,6 +98,39 @@ form {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.delete {
+    right: 0px;
+    margin-top: 5px;
+    /* color: red; */
+    background: transparent;
+    font-size: 25px;
+}
+.delete:hover {
+    color: red;
+    transition: 0.2s ease;
+}
+
+.dialog {
+    background: rgba(0,0,0,0.2);
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    border: 0;
+    height: 100vh;
+}
+
+.show-dialog {
+    visibility: visible !important;
 }
 
 .radio-bold {
@@ -183,12 +220,16 @@ nav .nav-item .item:hover {
     width: 65%;
 }
 
-.w-100 {
-    width: 100% !important;
-}
-
 .w-75 {
     width: 75%;
+}
+
+.w-93 {
+    width: 93%;
+}
+
+.w-100 {
+    width: 100% !important;
 }
 
 .col-4 {
@@ -478,6 +519,19 @@ nav .nav-item .item:hover {
     width: 230px;
     background: #00D1B4;
     box-shadow: 0px 5px 64px rgba(68, 216, 171, 0.3);
+    border-radius: 3px;
+    animation: button-show 1s ;
+}
+
+.btn-danger {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 5px;
+    border-radius: 20px;
+    /* width: 35px; */
+    background: #e94b1b;
+    box-shadow: 0px 5px 64px rgba(216, 78, 68, 0.3);
     border-radius: 3px;
     animation: button-show 1s ;
 }
