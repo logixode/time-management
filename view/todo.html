@@ -10,7 +10,7 @@
     
     <title>Todo List</title>
 </head>
-<body style="overflow: hidden;">
+<body>
     <nav class="container">
         <a href="#" class="nav-brand active">
             <img src="../assets/img/logo.png" class="logo">Time Management
@@ -24,10 +24,10 @@
         
         <div class="navbar" id="menu">
             <ul class="nav-menu">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="../index.html" class="item">home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="./todo.html" class="item">Todo List</a>
                 </li>
                 <li class="nav-item">
@@ -47,8 +47,8 @@
     <div class="container">
         <div class="mt-5 mb-3">
             <h1>Hello</h1>
-            <h1><b>Rohmad</b></h1>
-            <p>asdfasdf</p>
+            <h1 class="huge-text"><b>Rohmad</b></h1>
+            <p id="date">asdfasdf</p>
         </div>
         <div class="flex mx-auto">
             <div class="col-6 mr-3" id="col-divider">
@@ -72,11 +72,17 @@
                 <div class="flex">
                     <div class="col-6 bg-gray">
                         <img src="../assets/icon/clock.png" alt="" class="sign">
-                        <h3>All Schedule</h3>
+                        <div>
+                            <h3>All Schedule</h3>
+                            <p>5 Task</p>
+                        </div>
                     </div>
                     <div class="col-6 bg-gray">
                         <img src="../assets/icon/bag.png" alt="" class="sign">
-                        <h3>Work Project    </h3>
+                        <div>
+                            <h3>Work Project    </h3>
+                            <p>5 Task</p>
+                        </div>
                     </div>
                 </div>
 
@@ -84,26 +90,32 @@
                 <div class="flex">
                     <div class="col-6 bg-gray">
                         <img src="../assets/icon/grocery.png" alt="" class="sign">
-                        <h3>Grocery List</h3>
+                        <div>
+                            <h3>Grocery List</h3>
+                            <p>4 Task</p>
+                        </div>
                     </div>
                     <div class="col-6 bg-gray">
                         <img src="../assets/icon/book.png" alt="" class="sign">
-                        <h3>School Task</h3>
+                        <div>
+                            <h3>School Task</h3>
+                            <p>6 Task</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-6">
-                <button class="btn btn-primary w-100 btn-thin mb-3">Add Schedule</button>
-                <p class=>
+                <button class="btn btn-primary w-100 btn-thin mb-2">Add Schedule</button>
+                <p>
                     <input type="checkbox" id="radio1" name="radio-group" checked>
                     <label for="radio1"><b class="radio-bold">Make Web Mockup</b><br/>Work Project</label>
                 </p> <hr/>
-                <p class=>
+                <p>
                     <input type="checkbox" id="radio2" name="radio-group" />
                     <label for="radio2"><b class="radio-bold">Meeting with new client</b><br/>Work Project</label>
                 </p> <hr/>
-                <p class=>
+                <p>
                     <input type="checkbox" id="radio3" name="radio-group" />
                     <label for="radio3"><b class="radio-bold">Do homework</b><br/>School Task</label>
                 </p>
