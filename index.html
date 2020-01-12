@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- css font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- local css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     
     <title>Time Management</title>
 </head>
 <body>
+    <!-- navbar -->
     <nav class="container">
         <a href="#" class="nav-brand active">
             <img src="./assets/img/logo.png" class="logo">Time Management
@@ -42,8 +46,9 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> <!-- / navbar -->
 
+    <!-- body content -->
     <div class="container">
         <div class="flex">
             <div class="left">
@@ -57,8 +62,163 @@
                 <img src="./assets/img/dashboard.jpg" alt="Dashboard">
             </div>
         </div>
+        
         <div class="brand-path"></div>
-    </div>
+        <div class="brand-path-bottom"></div>
+        <div class="brand-path-bottom-bg"></div>
 
+        <!-- tester -->
+        <div class="text-center tester my-5">
+            <div class="mb-2">
+                <h2 class="text-primary">HAPPY CLIENT</h2>
+                <h3 class="my-1">- See what our customers say -</h3>
+            </div>
+            
+            <div class="card col-6 mx-auto p-2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, inventore et quidem, repudiandae quas amet dolore libero nostrum est sed totam cupiditate eaque? Iste enim, veritatis dolor provident aperiam aliquam!</p>
+            </div>
+
+            <div class="m-auto col-4 flex my-5">
+                <div class="col-4">
+                     <div class="img-client mx-1 mx-auto">
+    
+                     </div>
+                </div>
+                <div class="col-4">
+                     <div class="img-client-center mx-1 mx-auto">
+    
+                     </div>
+                     <h5 class="mt-2">Rizki Firda</h5>
+                </div>
+                <div class="col-4">
+                     <div class="img-client mx-1 mx-auto">
+    
+                     </div>
+                </div>
+            </div>
+        </div> <!-- / tester -->
+
+        <!-- pricing list -->
+        <div class="sub-item text-center">
+            <h2 class="text-primary text-uppercase">pricing list</h2>
+            <h3 class="my-1">- Select your plan -</h3>
+
+            <div class="flex col-7 mt-5 mx-auto">
+                <div class="col-4">
+                    <div class="card p-3 pr-5">
+                        <h3 class="mb-2">Free Trial</h3>
+                        <p><span class="jumbo mb-2">$0</span></p>
+
+                        <button class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-primary text-white p-3">
+                        <h3 class="mb-2">Monthly</h3>
+                        <p><span class="jumbo mb-2">$3</span> /month</p>
+
+                        <button class="btn btn-outline-primary w-100">Select</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card p-3 pl-5">
+                        <h3 class="mb-2">Annualy</h3>
+                        <p><span class="jumbo mb-2">$30</span> /year</p>
+
+                        <button class="btn btn-primary w-100">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- pricing list -->
+        
+        <!-- about -->
+        <div class="sub-item my-5 col-8 mx-auto text-center">
+            <h2 class="text-primary text-uppercase">About Us</h2>
+            <h3 class="my-1">- The Amazing Team -</h3>
+            <div class="mx-auto">
+                <div class="flex my-3">
+                    <div class="card mx col-4">
+                        <img src="../assets/img/ivan.jpg" alt="" class="img-rounded">
+                        <p>- UI Designer -</p>
+                        <div class="bg-gray">
+                            <h4>Mukhamad Ivan Alvian</h4>
+                        </div>
+                    </div>
+                    <div class="card mx col-4">
+                        <img src="../assets/img/rohmad.jpg" alt="" class="img-rounded">
+                        <p>- Web Developer -</p>
+                        <div class="bg-gray">
+                            <h4>Rohmad Kurniadi</h4>
+                        </div>
+                    </div>
+                    <div class="card mx col-4">
+                        <img src="../assets/img/hilmi.jpg" alt="" class="img-rounded">
+                        <p>- UX Designer -</p>
+                        <div class="bg-gray">
+                            <h4>Hilmi Bakhtiar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- / about -->
+        
+    </div> <!-- / body content - container -->
+
+    <!-- subscribe -->
+    <div class="p-2">
+        <div class="card mx-auto col-6 p-5 text-center">
+            <h3 class="text-primary text-uppercase">Subscibe for more information</h3>
+            
+            <form action="./" class="mt-3">
+                <div class="flex">
+                    <input class="w-100 mr-2" type="email" placeholder="Enter Your Email" required>
+                    <button type="submit" class="btn btn-primary px-3 py-1">Subscibe</button>
+                </div>
+            </form>
+        </div>
+    </div> <!-- / subscribe -->
+
+    <!-- footer -->
+    <div class="bg-footer"></div>
+    <div class="bg-footer-back"></div>
+    <footer class="text-center text-white">
+        <div class="flex col-4 mx-auto">
+            <div class="col-3">
+                <a class="text-white" href="./index.html">home</a>
+            </div>
+            <div class="col-3">
+                <a class="text-white" href="./view/todo.html">todo list</a>
+            </div>
+            <div class="col-3">
+                <a class="text-white" href="./view/about.html">about</a>
+            </div>
+            <div class="col-3">
+                <a class="text-white" href="./view/contact.html">contacts</a>
+            </div>
+        </div>
+
+        <div class="m-auto col-2 flex my-2">
+            <div class="col-4">
+                 <div class="icon-footer mx-1 mx-auto">
+
+                 </div>
+            </div>
+            <div class="col-4">
+                 <div class="icon-footer mx-1 mx-auto">
+
+                 </div>
+            </div>
+            <div class="col-4">
+                 <div class="icon-footer mx-1 mx-auto">
+
+                 </div>
+            </div>
+        </div>
+            
+        <p>Copyright &copy; 2020 logiXode Team | All Right Reserved</p>
+    </footer> <!-- / footer -->
+    
+
+    <!-- javascript -->
     <script src="./index.js"></script>
 </body
