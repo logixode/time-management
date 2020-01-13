@@ -330,6 +330,10 @@ nav .nav-item .item:hover {
     text-align: center;
 }
 
+.align-item-center {
+    align-items: center;
+}
+
 .px-1 {
     padding-right: 10px !important;
     padding-left: 10px !important;
@@ -587,9 +591,9 @@ nav .nav-item .item:hover {
 }
 
 .icon-footer {
-    width: 30px;
-    height: 30px;
-    background: #ddd;
+    width: 25px;
+    height: 25px;
+    /* background: #ddd; */
     border-radius: 50%;
 }
 
@@ -606,6 +610,20 @@ nav .nav-item .item:hover {
     height: 50px;
     background: #ddd;
     border-radius: 50%;
+}
+
+.img-client-center img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .bg-footer {
